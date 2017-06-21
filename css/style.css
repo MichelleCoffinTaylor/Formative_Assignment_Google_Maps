@@ -1,0 +1,22 @@
+/* --- Style Sheet --- */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	text-align: center;
+	font-family: helvetica;
+}
+.map-container {
+	width: 80%;
+	height: 80%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+#map {
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	background-color: grey;
+}

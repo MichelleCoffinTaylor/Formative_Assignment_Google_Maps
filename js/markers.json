@@ -1,0 +1,56 @@
+{
+	"markers":[
+		{
+			"lat": -41.210932,
+			"lng": 174.911957,
+			"title": "Pine Haven School"
+		},
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Maidstone Pump Track"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Maidstone Max Park"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Stokes Valley Enterance Park"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Belmont Down Hill Trails"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Wainui Down Hill Trails"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Karori School Pump Track"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Miramar Prison Down Hill Trails"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Island Bay Pump Track and Down Hill Trails"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Brooklyn Down Hill Trails"
+		}
+
+	]
+
+}
