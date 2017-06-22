@@ -1,0 +1,56 @@
+{
+	"markers":[
+		{
+			"lat": -41.210932,
+			"lng": 174.911957,
+			"title": "Brooklyn Motocross Track" 
+		},
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Kapi-Mana Motorcycle Club" 
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Wairarapa Motorcycle Club"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Martinborough Motorcycle Club"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Gold Coast Motocross Club"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Taikorea Motorcycle Park"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Flipps Motorcycle Park"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Kapiti Motorcycle Club"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Wanganui Motorcycle Club"
+		}
+		{
+			"lat": -41.292662,
+			"lng": 174.778967,
+			"title": "Bay of Plenty Motorcycle Club"
+		}
+
+	]
+
+}
