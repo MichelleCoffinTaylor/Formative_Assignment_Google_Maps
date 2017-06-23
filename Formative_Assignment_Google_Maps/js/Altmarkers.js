@@ -1,3 +1,5 @@
+var map;
+
 function init(){
 
 	var mapOptions = {
@@ -7,7 +9,7 @@ function init(){
 			lng: 174.9077703
 		},
 		//states what the initial zoom for the map is. 
-		zoom: 11,
+		zoom: 17,
 		//Turn off all of the User Interface for the Map
 		disableDefaultUI: false,
 		//Turn off the ability to zoom with clicks
@@ -22,12 +24,12 @@ function init(){
 		backgroundColor: "grey",
 		keyboardShortcuts: false,
 		mapTypeControlOptions: {
-			position: google.maps.ControlPosition.TOP_LEFT
+			position: google.maps.ControlPosition.TOP_CENTER
 		},
 		styles: [
 			{
 				stylers:[
-					{ hue: "#16a085" },
+					{ hue: "#d01439" },
 					{ saturation: -20 }
 				]
 			},
@@ -44,21 +46,58 @@ function init(){
 				featureType: "transit",
 				elementType: "labels",
 				stylers: [
-					{ hue: "#A65424"},
+					{ hue: "#ff0066"},
 					{ saturation: +80 }
 				]
 			},
 			{
 				featureType: "water",
 				stylers: [
-					{ color: "#519183"}  
+					{ color: "#16a085"}
+				]
+			},
+			{
+				featureType: "poi",
+				stylers: [
+					{visibility: "off"}
 				]
 			}
 		]
 	}
 
-	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	showAllMarkers();
 }
 
 google.maps.event.addDomListener(window, 'load', init);
+
+
+function showAllMarkers(){
+	$.ajax({
+		url: "js/markers.json",
+		dataType: 'json',
+		success: function(DataFromJSON){
+			for (var i = 0; i < DataFromJSON.markers.length; i++) {
+				var marker = new google.maps.Marker({
+					position: {
+						lat: DataFromJSON.markers[i].lat,
+						lng: DataFromJSON.markers[i].lng
+					},
+					map: map
+				})
+			};
+		},	
+		error: function(){
+			console.log("something went wrong");
+		}
+	})
+}
+
+
+
+
+
+
+
+
 

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Motorcycling North Island</title>
+	<title>Motorcycling Lower North Island</title>
 	<!-- Link to Style Sheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Link to Browser Tab Icon -->
@@ -18,10 +18,19 @@
 			<img src="http://placehold.it/100x80" title="Logo" alt="Motorcycling-North-Island-Logo">
 		</div>
 		<div class="website-heading">
-			<h1 class="font-family">Motorcycling North Island</h1>
+			<h1 class="font-family">Motorcycling Lower North Island</h1>
 		</div>
 	</header>
 	<div class="map-container">
+		<div class="travel-mode">
+			<b class="font-family">Mode of Travel :</b>
+				<select id="mode" onchange="changeMode(this.value)">
+					<option value="DRIVING">Driving</option>
+					<option value="WALKING">Walking</option>
+					<option value="BICYCLING">BiCycling</option>
+					<option value="TRANSIT">Transit</option>
+				</select>
+		</div>
 		<div id="map"></div>
 	</div>
 	<footer>
@@ -31,8 +40,8 @@
 		<div>
 			<h3 class="map-description font-family">Key</h3>
 			<ul>
-				<li class="font-family"><i class="fa fa-motorcycle" aria-hidden="true"></i>Road Bike Events</li>
-				<li class="font-family"><i class="fa fa-bicycle" aria-hidden="true"></i>Off Road Bike Events</li>
+				<li class="font-family"><i class="fa fa-motorcycle" aria-hidden="true"></i>Motorcycle Clubs</li>
+				<li class="font-family"><i class="fa fa-bicycle" aria-hidden="true"></i>Motorcycle Tracks</li>
 				<li class="font-family"><i class="fa fa-building" aria-hidden="true"></i>Motorcycle Stores</li>
 			</ul>
 		</div>
@@ -46,7 +55,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<!-- Link to Javascript File -->
 	<script type="text/javascript" src="js/script.js"></script>
-
+	<!-- Link to Markers -->
+	<script type="text/javascript" src="js/markers.js"></script>
 	<!-- API Key -->
 	<!-- AIzaSyCU3TbubPckrJJ99koFcMFQfA6H4kifLkA -->
 </body>
